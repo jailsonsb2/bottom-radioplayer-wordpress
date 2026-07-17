@@ -36,19 +36,29 @@
 }
 
 .brp-video-dock-close {
-    flex: none;
-    width: 28px;
-    height: 28px;
-    border: none;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
-    color: #fff;
-    font-size: 12px;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex: none !important;
+    box-sizing: border-box !important;
+    width: 28px !important;
+    height: 28px !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    border-radius: 50% !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: #fff !important;
+    font-size: 12px !important;
+    line-height: 1 !important;
+    font-family: inherit !important;
     cursor: pointer;
     transition: background 0.2s ease;
 }
 
-.brp-video-dock-close:hover { background: rgba(255, 255, 255, 0.22); }
+.brp-video-dock-close:hover { background: rgba(255, 255, 255, 0.22) !important; }
 
 .brp-video-dock-body iframe {
     width: 100%;

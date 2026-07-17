@@ -3,7 +3,7 @@
  * Plugin Name: Bottom Radio Player
  * Plugin URI: https://github.com/jailsonsb2/bottom-radioplayer-wordpress
  * Description: Bottom-bar radio player with seamless navigation (audio never stops while visitors browse the site). Configure stations, behavior and appearance from an admin settings page — no file editing required.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Jailson
  * Author URI: https://github.com/jailsonsb2
  * License: GPL-2.0-or-later
@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
-define( 'BRP_VERSION', '1.0.0' );
+define( 'BRP_VERSION', '1.0.1' );
 define( 'BRP_PLUGIN_FILE', __FILE__ );
 define( 'BRP_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'BRP_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
