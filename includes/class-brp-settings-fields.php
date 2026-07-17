@@ -107,7 +107,7 @@ class BRP_Settings_Fields {
         ?>
         <div class="brp-station-card" data-index="<?php echo esc_attr( $index ); ?>">
             <div class="brp-station-card-header">
-                <strong class="brp-station-title"><?php echo $station['name'] ? esc_html( $station['name'] ) : esc_html__( 'New station', 'bottom-radioplayer' ); ?></strong>
+                <strong class="brp-station-title" data-placeholder="<?php esc_attr_e( 'New station', 'bottom-radioplayer' ); ?>"><?php echo $station['name'] ? esc_html( $station['name'] ) : esc_html__( 'New station', 'bottom-radioplayer' ); ?></strong>
                 <button type="button" class="button-link brp-remove-station" aria-label="<?php esc_attr_e( 'Remove station', 'bottom-radioplayer' ); ?>">&times;</button>
             </div>
 
@@ -138,7 +138,7 @@ class BRP_Settings_Fields {
                         <span class="brp-image-picker">
                             <img class="brp-image-preview" src="<?php echo esc_url( $station[ $field ] ); ?>" style="<?php echo $station[ $field ] ? '' : 'display:none;'; ?>" alt="" />
                             <input type="text" class="regular-text brp-image-url" name="<?php echo esc_attr( $name ); ?>[<?php echo esc_attr( $field ); ?>]" value="<?php echo esc_attr( $station[ $field ] ); ?>" />
-                            <button type="button" class="button brp-choose-image"><?php esc_html_e( 'Choose image', 'bottom-radioplayer' ); ?></button>
+                            <button type="button" class="button brp-choose-image" data-title="<?php esc_attr_e( 'Select an image', 'bottom-radioplayer' ); ?>"><?php esc_html_e( 'Choose image', 'bottom-radioplayer' ); ?></button>
                         </span>
                     </p>
                 <?php endforeach; ?>

@@ -31,6 +31,8 @@ This plugin adds a proper **wp-admin settings page** on top of the core componen
 3. Go to the new **Radio Player** menu in wp-admin and fill in the **General**, **Stations** and **Appearance** tabs — Save.
 4. The player appears automatically on the front-end of every page.
 
+> ⚠️ **The player will not appear until you configure at least one station** (name + stream URL, on the Stations tab) **and save.** With no stations set, there's nothing to play, so the plugin doesn't load anything on the front-end — the settings page shows a reminder about this until you do.
+
 Updating: repeat steps 1–2 with a newer `bottom-radioplayer.zip`. Settings are stored in the WordPress database and survive the update.
 
 ### Relationship to the core project

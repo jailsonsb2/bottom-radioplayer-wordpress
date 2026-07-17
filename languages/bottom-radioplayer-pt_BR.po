@@ -1,0 +1,137 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Bottom Radio Player 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/jailsonsb2/bottom-radioplayer-wordpress/issues\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: pt_BR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Domain: bottom-radioplayer\n"
+
+#: includes/class-brp-settings-page.php:24
+#: includes/class-brp-settings-page.php:25
+msgid "Radio Player"
+msgstr "Radio Player"
+
+#: includes/class-brp-settings-page.php:82
+msgid "General"
+msgstr "Geral"
+
+#: includes/class-brp-settings-page.php:83
+#: includes/class-brp-settings-page.php:104
+msgid "Stations"
+msgstr "Estações"
+
+#: includes/class-brp-settings-page.php:84
+msgid "Appearance"
+msgstr "Aparência"
+
+#: includes/class-brp-settings-page.php:93
+msgid "Bottom Radio Player"
+msgstr "Bottom Radio Player"
+
+#: includes/class-brp-settings-page.php:96
+msgid "Settings saved."
+msgstr "Configurações salvas."
+
+#. translators: %s: link to the Stations tab
+#: includes/class-brp-settings-page.php:103
+msgid "The player will not appear on your site until you add at least one station with a stream URL, on the %s tab."
+msgstr "O player não vai aparecer no seu site até você adicionar pelo menos uma estação com URL de stream, na aba %s."
+
+#: includes/class-brp-settings-fields.php:22
+msgid "Seamless navigation"
+msgstr "Navegação seamless"
+
+#: includes/class-brp-settings-fields.php:26
+msgid "Keep the audio playing while visitors navigate between pages (recommended)."
+msgstr "Mantém o áudio tocando enquanto os visitantes navegam entre as páginas (recomendado)."
+
+#: includes/class-brp-settings-fields.php:31
+msgid "Now-playing refresh interval (ms)"
+msgstr "Intervalo de atualização da música atual (ms)"
+
+#: includes/class-brp-settings-fields.php:34
+msgid "How often the player polls for the current track. Minimum 3000ms."
+msgstr "Com que frequência o player consulta a música atual. Mínimo de 3000ms."
+
+#: includes/class-brp-settings-fields.php:48
+msgid "Custom CSS"
+msgstr "CSS personalizado"
+
+#: includes/class-brp-settings-fields.php:51
+msgid "Raw CSS printed on every front-end page, after the player's default styles — use it to override colors, spacing, fonts, etc."
+msgstr "CSS bruto impresso em toda página do site, depois dos estilos padrão do player — use para sobrescrever cores, espaçamentos, fontes, etc."
+
+#: includes/class-brp-settings-fields.php:61
+msgid "Add one or more stations. Visitors can switch between them from the player's station list."
+msgstr "Adicione uma ou mais estações. Os visitantes podem alternar entre elas na lista de estações do player."
+
+#: includes/class-brp-settings-fields.php:74
+msgid "+ Add station"
+msgstr "+ Adicionar estação"
+
+#: includes/class-brp-settings-fields.php:110
+msgid "New station"
+msgstr "Nova estação"
+
+#: includes/class-brp-settings-fields.php:111
+msgid "Remove station"
+msgstr "Remover estação"
+
+#: includes/class-brp-settings-fields.php:116
+msgid "Name"
+msgstr "Nome"
+
+#: includes/class-brp-settings-fields.php:121
+msgid "Hash (unique ID)"
+msgstr "Hash (ID único)"
+
+#: includes/class-brp-settings-fields.php:126
+msgid "Description"
+msgstr "Descrição"
+
+#: includes/class-brp-settings-fields.php:132
+msgid "Logo image"
+msgstr "Imagem do logo"
+
+#: includes/class-brp-settings-fields.php:133
+msgid "Album art"
+msgstr "Capa do álbum"
+
+#: includes/class-brp-settings-fields.php:134
+msgid "Background cover"
+msgstr "Capa de fundo"
+
+#: includes/class-brp-settings-fields.php:141
+msgid "Choose image"
+msgstr "Escolher imagem"
+
+#: includes/class-brp-settings-fields.php:141
+msgid "Select an image"
+msgstr "Selecionar uma imagem"
+
+#: includes/class-brp-settings-fields.php:147
+msgid "Stream URL"
+msgstr "URL do stream"
+
+#: includes/class-brp-settings-fields.php:152
+msgid "Now-playing API URL (optional)"
+msgstr "URL da API de música atual (opcional)"
+
+#: includes/class-brp-settings-fields.php:157
+msgid "Live video stream URL (optional)"
+msgstr "URL de transmissão de vídeo ao vivo (opcional)"
+
+#: includes/class-brp-settings-fields.php:160
+msgid "Embeddable player URL for a 24/7 video simulcast (opens in a \"Tv\" button). This is unrelated to the automatic \"Clipe\" button, which appears on its own whenever the now-playing API returns a YouTube ID for the current song."
+msgstr "URL de player incorporável para uma transmissão de vídeo 24h (abre num botão \"Tv\"). Isso não tem relação com o botão automático \"Clipe\", que aparece sozinho sempre que a API de música atual retorna um ID do YouTube para a música tocando."
+
+#: includes/class-brp-settings-fields.php:163
+msgid "Metadata source (optional)"
+msgstr "Fonte dos metadados (opcional)"
+
+#: includes/class-brp-settings-fields.php:169
+msgid "Social links (optional)"
+msgstr "Links de redes sociais (opcional)"

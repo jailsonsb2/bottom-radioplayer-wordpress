@@ -96,6 +96,15 @@ class BRP_Settings_Page {
             echo '<div class="notice notice-success is-dismissible"><p>' . esc_html__( 'Settings saved.', 'bottom-radioplayer' ) . '</p></div>';
         }
 
+        if ( empty( get_option( 'brp_stations', array() ) ) ) {
+            $stations_url = add_query_arg( array( 'page' => self::PAGE_SLUG, 'tab' => 'stations' ), admin_url( 'admin.php' ) );
+            echo '<div class="notice notice-warning"><p>' . sprintf(
+                /* translators: %s: link to the Stations tab */
+                esc_html__( 'The player will not appear on your site until you add at least one station with a stream URL, on the %s tab.', 'bottom-radioplayer' ),
+                '<a href="' . esc_url( $stations_url ) . '">' . esc_html__( 'Stations', 'bottom-radioplayer' ) . '</a>'
+            ) . '</p></div>';
+        }
+
         echo '<h2 class="nav-tab-wrapper">';
         foreach ( $tabs as $slug => $label ) {
             $url   = add_query_arg( array( 'page' => self::PAGE_SLUG, 'tab' => $slug ), admin_url( 'admin.php' ) );
