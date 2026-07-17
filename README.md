@@ -9,6 +9,10 @@ This plugin adds a proper **wp-admin settings page** on top of the core componen
 
 > This plugin is **not published on wordpress.org**. Install it manually from this repository (see below).
 
+### Screenshot
+
+![Bottom Radio Player running on WordPress, with Clip Mode open](https://i.imgur.com/MfCnzbw.png)
+
 ### Features
 
 - **Settings page** (General / Stations / Appearance tabs) under a "Radio Player" admin menu.
