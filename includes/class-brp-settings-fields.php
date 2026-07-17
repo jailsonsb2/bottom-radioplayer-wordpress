@@ -49,6 +49,19 @@ class BRP_Settings_Fields {
                 <td>
                     <textarea id="brp-custom-css" name="brp_appearance_settings[custom_css]" rows="16" class="large-text code" spellcheck="false"><?php echo esc_textarea( $appearance['custom_css'] ); ?></textarea>
                     <p class="description"><?php esc_html_e( 'Raw CSS printed on every front-end page, after the player\'s default styles — use it to override colors, spacing, fonts, etc.', 'bottom-radioplayer' ); ?></p>
+                    <p class="description"><?php echo wp_kses(
+                        sprintf(
+                            /* translators: 1: #app-player selector, 2: --accent CSS variable, 3: link to the selector reference */
+                            __( 'Scope your rules under %1$s so they don\'t leak into the rest of the site. The dominant color extracted from the cover art is exposed as the %2$s CSS variable. Full selector reference and examples: %3$s.', 'bottom-radioplayer' ),
+                            '<code>#app-player</code>',
+                            '<code>--accent</code>',
+                            '<a href="https://github.com/jailsonsb2/bottom-radioplayer-wordpress#customizing-the-appearance-custom-css" target="_blank" rel="noopener noreferrer">README</a>'
+                        ),
+                        array(
+                            'code' => array(),
+                            'a'    => array( 'href' => array(), 'target' => array(), 'rel' => array() ),
+                        )
+                    ); ?></p>
                 </td>
             </tr>
         </table>

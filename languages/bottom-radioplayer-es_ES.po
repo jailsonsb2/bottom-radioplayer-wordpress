@@ -64,6 +64,11 @@ msgstr "CSS personalizado"
 msgid "Raw CSS printed on every front-end page, after the player's default styles — use it to override colors, spacing, fonts, etc."
 msgstr "CSS sin procesar que se imprime en cada página del sitio, después de los estilos predeterminados del reproductor — úsalo para sobrescribir colores, espaciados, fuentes, etc."
 
+#. translators: 1: #app-player selector, 2: --accent CSS variable, 3: link to the selector reference
+#: includes/class-brp-settings-fields.php:56
+msgid "Scope your rules under %1$s so they don't leak into the rest of the site. The dominant color extracted from the cover art is exposed as the %2$s CSS variable. Full selector reference and examples: %3$s."
+msgstr "Escribe tus reglas dentro de %1$s para que no se filtren al resto del sitio. El color dominante extraído de la portada está disponible en la variable CSS %2$s. Referencia completa de selectores y ejemplos: %3$s."
+
 #: includes/class-brp-settings-fields.php:61
 msgid "Add one or more stations. Visitors can switch between them from the player's station list."
 msgstr "Agrega una o más estaciones. Los visitantes pueden cambiar entre ellas desde la lista de estaciones del reproductor."

@@ -35,6 +35,53 @@ This plugin adds a proper **wp-admin settings page** on top of the core componen
 
 Updating: repeat steps 1–2 with a newer `bottom-radioplayer.zip`. Settings are stored in the WordPress database and survive the update.
 
+### Customizing the appearance (Custom CSS)
+
+The **Appearance** tab has a raw CSS textarea, printed on every front-end page inside a `<style>` tag placed at the very end of `<body>` — after the player's own default styles, so your rules win the cascade without needing `!important` in most cases (a few base rules already use `!important` themselves, like the play button's background; matching that in your override may be needed for those specific properties).
+
+**What you can do:** anything CSS can do — colors, spacing, fonts, sizes, animations, hide/show elements (`display: none`), `@media` queries, `@font-face`/`@import` for a custom font, etc.
+**What you can't do:** add or remove HTML elements, change player behavior/JS, or fix layout bugs that aren't CSS — this field only restyles what's already there.
+
+Always scope your selectors under `#app-player` (the player's root element) — the `<style>` tag is global to the page, so unscoped selectors (e.g. a bare `button { ... }`) can leak into the rest of your site.
+
+**Key selectors:**
+
+| Element | Selector |
+|---|---|
+| Player root / dock | `#app-player .player` |
+| Play/pause button | `.player-button-play` |
+| Previous / next buttons | `.player-button-backward-step` / `.player-button-forward-step` |
+| Volume, history, share, lyrics, stations buttons | `.player-right button.player-button` |
+| Clip Mode button | `.player-button-clip` |
+| Live TV button (`tv_url`) | `.player-button-tv` |
+| Station list items | `.station` (active one: `.station.is-active`) |
+| Station cover/logo | `.player-artwork img`, `.player-station img` |
+| Song title / artist | `.song-name`, `.song-artist` |
+| Dropdowns (volume) | `.dropdown` |
+| Panels (history, stations list) | `.offcanvas-player` |
+| Modals (share, lyrics) | `.player-modal`, `.modal-content` |
+| Clip Mode video mini-player | `.brp-video-dock` |
+| Live TV fullscreen modal | `.modal-video` |
+
+**The accent color:** the player extracts a dominant color from the current cover art and exposes it as the CSS custom property `--accent` on the player root — most colored details (play button gradient, active station border, top hairline, clip video border) read from it via `var(--accent, <fallback>)`. To pin a fixed color instead of letting it change per song:
+
+```css
+#app-player { --accent: #ff6600; }
+```
+
+**Other examples:**
+
+```css
+/* Hide the live TV button */
+#app-player .player-button-tv { display: none; }
+
+/* Make the play button bigger */
+#app-player .player-button-play { padding: 1.4rem; }
+
+/* Square corners instead of rounded */
+#app-player .player { border-radius: 0; }
+```
+
 ### Languages
 
 The settings page follows your WordPress admin language automatically — no configuration needed. Currently translated: **English** (default, no file needed — it's the source language), **Português (pt_BR, pt_PT)**, **Español (es_ES)**. Missing your language? Translate `languages/bottom-radioplayer.pot` and open a pull request.
