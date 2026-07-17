@@ -35,6 +35,10 @@ This plugin adds a proper **wp-admin settings page** on top of the core componen
 
 Updating: repeat steps 1–2 with a newer `bottom-radioplayer.zip`. Settings are stored in the WordPress database and survive the update.
 
+### Languages
+
+The settings page follows your WordPress admin language automatically — no configuration needed. Currently translated: **English** (default, no file needed — it's the source language), **Português (pt_BR, pt_PT)**, **Español (es_ES)**. Missing your language? Translate `languages/bottom-radioplayer.pot` and open a pull request.
+
 ### Relationship to the core project
 
 The player component itself (`js/radioplayer.js`, `css/`, seamless navigation, now-playing metadata, etc.) is developed in **[jailsonsb2/bottom_radioplayer](https://github.com/jailsonsb2/bottom_radioplayer)** — that's also where the plain (non-WordPress) drop-in install, the live demo, and the full feature list live. This repository only adds the WordPress-specific admin/settings layer around it.
