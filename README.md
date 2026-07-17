@@ -11,7 +11,7 @@ This plugin adds a proper **wp-admin settings page** on top of the core componen
 
 ### Screenshot
 
-![Bottom Radio Player running on WordPress, with Clip Mode open](https://i.imgur.com/MfCnzbw.png)
+![Bottom Radio Player running on WordPress, with Clip Mode open](https://i.imgur.com/hdTgRIH.png)
 
 ### Features
 
