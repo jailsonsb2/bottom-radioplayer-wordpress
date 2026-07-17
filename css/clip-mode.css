@@ -1,0 +1,58 @@
+/* Bottom Radio Player — Clip Mode floating video mini-player */
+
+.brp-video-dock {
+    position: fixed;
+    right: 16px;
+    bottom: 122px; /* acima do dock do player */
+    z-index: 90;
+    width: min(400px, calc(100vw - 32px));
+    border-radius: 16px;
+    overflow: hidden;
+    background: rgba(13, 17, 23, 0.96);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55);
+    animation: brp-video-dock-in 0.35s ease both;
+}
+
+@keyframes brp-video-dock-in {
+    from { transform: translateY(16px); opacity: 0; }
+}
+
+.brp-video-dock-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 12px;
+    color: #fff;
+}
+
+.brp-video-dock-title {
+    font-size: 13px;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.brp-video-dock-close {
+    flex: none;
+    width: 28px;
+    height: 28px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.brp-video-dock-close:hover { background: rgba(255, 255, 255, 0.22); }
+
+.brp-video-dock-body iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    display: block;
+    border: 0;
+}
